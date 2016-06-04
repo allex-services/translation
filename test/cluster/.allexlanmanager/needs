@@ -1,0 +1,15 @@
+[
+  {
+    "modulename": "allex_translationservice",
+    "instancename": "Translator",
+    "propertyhash": {
+      "storage": {
+        "modulename": "allex_mongostorage",
+        "propertyhash": {
+          "server": "127.0.0.1",
+          "database": "test"
+        }
+      }
+    }
+  }
+]

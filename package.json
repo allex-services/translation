@@ -1,0 +1,21 @@
+{
+  "name": "allex_translationservice",
+  "version": "0.1.0",
+  "description": "TranslationService",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url" : "git@gitlab.hers.rs:allex_services/translation"
+  },
+  "keywords": [
+    "ecosystem:allex",
+    "Service",
+    "Translation"
+  ],
+  "author": "HERS Belgrade",
+  "license": "ISC"
+}
+
