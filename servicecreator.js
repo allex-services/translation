@@ -14,14 +14,22 @@ function createTranslationService(execlib, ParentServicePack, translationlib) {
 
   function TranslationService(prophash) {
     ParentService.call(this, prophash);
-    var st = lib.extend(prophash.storage, {
+
+    this.startSubServiceStatically('allex_vocabularydataservice', 'vocabulary', {
+      storage: lib.extend(prophash.storage, {
         propertyhash: {
           table: 'vocabulary'
         }
-      });
-    console.log(st);
-    this.startSubServiceStatically('allex_vocabularydataservice', 'vocabulary', {
-      storage: st
+      })
+    });
+
+    this.startSubServiceStatically('allex_languagesdataservice', 'languages', {
+      storage: lib.extend(prophash.storage, {
+        propertyhash: {
+          table: 'languages',
+          _idname: 'lcode'
+        }
+      })
     });
   }
   
