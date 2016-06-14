@@ -16,7 +16,7 @@ function createTranslationService(execlib, ParentServicePack, translationlib) {
     ParentService.call(this, prophash);
 
     this.startSubServiceStatically('allex_vocabularydataservice', 'vocabulary', {
-      storage: lib.extend(prophash.storage, {
+      storage: lib.extend({}, prophash.storage, {
         propertyhash: {
           table: 'vocabulary'
         }
@@ -24,7 +24,7 @@ function createTranslationService(execlib, ParentServicePack, translationlib) {
     });
 
     this.startSubServiceStatically('allex_languagesdataservice', 'languages', {
-      storage: lib.extend(prophash.storage, {
+      storage: lib.extend({}, prophash.storage, {
         propertyhash: {
           table: 'languages',
           _idname: 'lcode'
