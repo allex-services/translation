@@ -1,6 +1,6 @@
 {
   "lanmanageraddress": "127.0.0.1",
-  "lanmanagerportcorrection": 0,
+  "lanmanagerportcorrection": 30,
   "portrangestart": {
     "tcp": 15000,
     "http": 16000,

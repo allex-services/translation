@@ -44,6 +44,11 @@ function createTranslationService(execlib, ParentServicePack, translationlib) {
     qlib.promise2defer(job.go(thingy), defer);
   });
 
+  TranslationService.prototype.mergetranslate = execSuite.dependentServiceMethod(['vocabulary'], [], function (vocabulary, thingy, language, defer) {
+    var job = new translationlib.Translator(vocabulary, language, true);
+    qlib.promise2defer(job.go(thingy), defer);
+  });
+
   TranslationService.prototype.propertyHashDescriptor = {
     storage: {
       type: 'object'

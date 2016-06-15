@@ -1,3 +1,4 @@
 module.exports = {
-  translate: true
+  translate: true,
+  mergetranslate: true
 };

@@ -19,6 +19,10 @@ function createUser(execlib, ParentUser) {
     qlib.promise2defer(this.__service.translate(thingy, language), defer);
   };
 
+  User.prototype.mergetranslate = function (thingy, language, defer) {
+    qlib.promise2defer(this.__service.mergetranslate(thingy, language), defer);
+  };
+
   return User;
 }
 
