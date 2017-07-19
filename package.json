@@ -1,6 +1,6 @@
 {
   "name": "allex_translationservice",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TranslationService",
   "main": "index.js",
   "scripts": {

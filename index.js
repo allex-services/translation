@@ -1,6 +1,6 @@
 function createServicePack(execlib) {
   return execlib.loadDependencies([
-    'allex:translation:lib'
+    'allex_translationlib'
   ], realCreator.bind(null, execlib));
 }
 
